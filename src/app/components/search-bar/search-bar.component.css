@@ -1,0 +1,78 @@
+@import "../../../styles.css";
+
+.search-form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  background: var(--card-bg);
+  padding: 0.75rem;
+  gap: 0.5rem;
+  box-shadow: var(--input-box-shadow);
+}
+
+.search-form .input-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  gap: 10px;
+}
+
+@media (min-width: 700px) {
+  .search-form .input-container {
+    gap: 24px;
+  }
+}
+
+.search-form .input-container .search-input {
+  width: 100%;
+  font-size: 11px;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+  border: 0;
+  background: inherit;
+  color: var(--accent-text);
+}
+
+.search-form .input-container .search-input::placeholder {
+  color: var(--accent-text);
+}
+
+@media (min-width: 700px) {
+  .search-form .input-container .search-input {
+    font-size: 18px;
+  }
+}
+
+.search-form .error-message {
+  color: var(--error-text);
+  font-size: 11px;
+  width: 50%;
+  text-align: right;
+}
+
+.search-form .search-button {
+  padding: 12.5px 16px;
+  width: 100px;
+  height: 45px;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  background: var(--button-bg);
+  font-family: 'Roboto', sans-serif;
+}
+
+@media (min-width: 700px) {
+  .search-form .search-button {
+    width: 106px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+.search-form .search-button:hover {
+  cursor: pointer;
+  background: var(--button-hover-bg);
+}

@@ -1,0 +1,11 @@
+<form class="search-form">
+  <div class="input-container">
+
+    <input type="text" class="search-input" aria-labelledby="search github username"
+      placeholder="Search GitHub username..." autocomplete="off" [formControl]="searchValue" />
+  </div>
+  <p class="error-message" *ngIf="noResults">No results</p>
+  <button type="submit" class="search-button" (click)="searchUser()">
+    Search
+  </button>
+</form>

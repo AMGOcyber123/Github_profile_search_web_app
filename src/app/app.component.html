@@ -1,0 +1,11 @@
+<main>
+  <header>
+    <div class="header-container">
+      <h1>Github Profile search</h1>
+    </div>
+  </header>
+  <app-search-bar (userReturned)="userReturned($event)"></app-search-bar>
+  <article>
+    <app-card [user]="user"></app-card>
+  </article>
+</main>

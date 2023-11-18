@@ -1,0 +1,21 @@
+main {
+  max-width: 730px;
+  margin: 0 auto;
+}
+
+main .header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+main .header-container h1 {
+  font-size: 26px;
+  line-height: 39px;
+}
+
+h1 {
+  color: aliceblue;
+  font-weight: 700;
+}

@@ -1,0 +1,73 @@
+@import "../../../styles.css";
+
+.header-container:not(.desktop) {
+  display: flex;
+  flex-direction: column;
+  line-height: 19px;
+  overflow: hidden;
+}
+
+.header-container:not(.desktop) .user-name {
+  line-height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+}
+
+@media (min-width: 700px) {
+  .header-container:not(.desktop) .user-name {
+    font-size: 26px;
+    line-height: 38px;
+  }
+}
+
+.header-container:not(.desktop) .gh-user-page {
+  color: var(--button-bg);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+@media (min-width: 700px) {
+  .header-container:not(.desktop) .gh-user-page {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.header-container:not(.desktop) .joined-date {
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+@media (min-width: 700px) {
+  .header-container:not(.desktop) .joined-date {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+.header-container.desktop {
+  display: flex;
+  flex-direction: column;
+  line-height: 39px;
+  overflow: hidden;
+}
+
+.header-container.desktop .name-date {
+  display: flex;
+  justify-content: space-between;
+  line-height: 24px;
+}
+
+.header-container.desktop .name-date .user-name {
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 26px;
+}
+
+.header-container.desktop .gh-user-page {
+  color: var(--button-bg);
+  text-decoration: none;
+  font-size: 13px;
+}
